@@ -1,0 +1,4 @@
+- Utiliza por defecto JavaScript.
+- Utiliza el framework React para crear la webs.
+- Haz uso de buenas practicas.
+- Refactoriza el codigo siempre que se pueda.
