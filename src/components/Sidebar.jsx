@@ -28,7 +28,7 @@ const Sidebar = ({ activeSection, setActiveSection }) => {
 
       <div className={styles.userInfo}>
         <img 
-          src={user?.photoURL || '/default-avatar.png'} 
+          src={user?.photoURL || '/default-avatar.svg'} 
           alt="Avatar" 
           className={styles.userAvatar}
         />

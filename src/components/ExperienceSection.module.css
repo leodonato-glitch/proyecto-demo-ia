@@ -1,0 +1,247 @@
+.experienceSection {
+  margin-bottom: 2rem;
+}
+
+.sectionTitle {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid var(--color-primary-light);
+}
+
+.icon {
+  font-size: 1.5rem;
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+  text-align: center;
+  color: var(--color-text-secondary);
+  background-color: var(--color-gray-light);
+  border-radius: var(--border-radius);
+}
+
+.spinner {
+  width: 24px;
+  height: 24px;
+  border: 3px solid var(--color-gray-medium);
+  border-top: 3px solid var(--color-primary);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+.error {
+  background-color: #fee2e2;
+  color: #dc2626;
+  padding: 1.5rem;
+  border-radius: var(--border-radius);
+  text-align: center;
+}
+
+.error p {
+  margin: 0 0 1rem 0;
+}
+
+.experienceList {
+  position: relative;
+}
+
+.experienceItem {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  min-width: 20px;
+}
+
+.timelineDot {
+  width: 12px;
+  height: 12px;
+  background-color: var(--color-primary);
+  border: 3px solid var(--color-white);
+  border-radius: 50%;
+  box-shadow: 0 0 0 3px var(--color-primary-light);
+  z-index: 2;
+  margin-top: 0.5rem;
+}
+
+.timelineLine {
+  width: 2px;
+  background-color: var(--color-gray-medium);
+  flex: 1;
+  margin-top: 0.5rem;
+  min-height: 60px;
+}
+
+.experienceContent {
+  flex: 1;
+  background-color: var(--color-white);
+  border-radius: var(--border-radius-lg);
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
+  border-left: 4px solid var(--color-primary-light);
+  transition: var(--transition);
+}
+
+.experienceContent:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.experienceHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+  gap: 1rem;
+}
+
+.position {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin: 0;
+  line-height: 1.3;
+}
+
+.currentBadge {
+  display: inline-flex;
+  align-items: center;
+  background-color: #dcfce7;
+  color: #166534;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.currentBadge::before {
+  content: '●';
+  color: #22c55e;
+  margin-right: 0.5rem;
+}
+
+.company {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--color-primary);
+  margin-bottom: 0.5rem;
+}
+
+.location {
+  color: var(--color-text-secondary);
+  font-weight: normal;
+}
+
+.period {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--color-text-secondary);
+  margin-bottom: 1rem;
+}
+
+.duration {
+  font-style: italic;
+  color: var(--color-primary-dark);
+}
+
+.description {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--color-text-primary);
+  margin: 0;
+}
+
+.noData {
+  text-align: center;
+  padding: 3rem 2rem;
+  color: var(--color-text-secondary);
+  background-color: var(--color-gray-light);
+  border-radius: var(--border-radius);
+}
+
+.noDataIcon {
+  font-size: 3rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.noData p {
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .experienceItem {
+    gap: 1rem;
+  }
+
+  .experienceContent {
+    padding: 1rem;
+  }
+
+  .experienceHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .position {
+    font-size: 1.1rem;
+  }
+
+  .period {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.25rem;
+  }
+
+  .timeline {
+    min-width: 16px;
+  }
+
+  .timelineDot {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sectionTitle {
+    font-size: 1.3rem;
+  }
+
+  .experienceContent {
+    padding: 0.75rem;
+  }
+
+  .loading {
+    padding: 1.5rem;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+}

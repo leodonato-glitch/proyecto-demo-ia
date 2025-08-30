@@ -1,5 +1,7 @@
 import React from 'react';
 import { useAuth } from '../context/AuthContext';
+import ExperienceSection from '../components/ExperienceSection';
+import EducationSection from '../components/EducationSection';
 import styles from './Profile.module.css';
 
 const Profile = () => {
@@ -25,7 +27,7 @@ const Profile = () => {
       <div className={styles.profileCard}>
         <div className={styles.avatarSection}>
           <img 
-            src={user?.photoURL || '/default-avatar.png'} 
+            src={user?.photoURL || '/default-avatar.svg'} 
             alt="Avatar del usuario" 
             className={styles.avatar}
           />
@@ -92,6 +94,16 @@ const Profile = () => {
             Editar Perfil
           </button>
         </div>
+      </div>
+
+      {/* Nueva sección de Experiencia */}
+      <div className={styles.profileSection}>
+        <ExperienceSection />
+      </div>
+
+      {/* Nueva sección de Educación */}
+      <div className={styles.profileSection}>
+        <EducationSection />
       </div>
     </div>
   );

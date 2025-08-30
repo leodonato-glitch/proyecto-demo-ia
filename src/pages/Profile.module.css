@@ -1,6 +1,6 @@
 .profileContainer {
   padding: 2rem;
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -168,6 +168,27 @@
   }
 
   .profileCard {
+    padding: 1rem;
+  }
+}
+
+/* Estilos para las nuevas secciones */
+.profileSection {
+  background: var(--color-white);
+  border-radius: var(--border-radius-lg);
+  box-shadow: var(--shadow);
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .profileSection {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .profileSection {
     padding: 1rem;
   }
 }
