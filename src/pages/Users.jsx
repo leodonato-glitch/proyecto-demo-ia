@@ -267,7 +267,7 @@ const Users = () => {
                     <td style={{ padding: '1rem' }}>
                       <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem' }}>
                         <img 
-                          src={user.photoURL || '/default-avatar.png'} 
+                          src={user.photoURL || '/default-avatar.svg'} 
                           alt="Avatar" 
                           style={{
                             width: '40px',
